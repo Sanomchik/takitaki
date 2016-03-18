@@ -3,12 +3,14 @@ var sum = 0;
 var flag = false;
 var current = 0
 
-$('.leftbar').click(function(){
+$('.leftbar').click(function(event){
 	event.returnValue = false;
+	event.preventDefault();
 	$('.leftbar').toggleClass('leftshow');
 });
-$('.rightbar').click(function(){
+$('.rightbar').click(function(event){
 	event.returnValue = false;
+	event.preventDefault();
 	$('.rightbar').toggleClass('rightshow');
 });
 $('.cardback').click(function(){
